@@ -1,0 +1,7 @@
+<div class="stickers-collection">
+  <app-sticker-image
+    *ngFor="let sticker of stickersList$ | async"
+    [isStickerControls]="false"
+    [url]="sticker.url"
+  ></app-sticker-image>
+</div>

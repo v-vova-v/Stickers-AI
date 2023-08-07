@@ -1,0 +1,25 @@
+$sidebarTopBottomPadding: 50px;
+$contentSectionTopBottomPadding: 50px;
+
+:host {
+  width: 100%;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  .sidebar {
+    width: 290px;
+    height: calc(100vh - $sidebarTopBottomPadding * 2);
+    padding: $sidebarTopBottomPadding 0;
+    background-color: #fff;
+  }
+  .dashboard-content {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    overflow-y: auto;
+    height: calc(100vh - $contentSectionTopBottomPadding * 2);
+    background-color: #f4f7fe;
+    flex: 1;
+  }
+}

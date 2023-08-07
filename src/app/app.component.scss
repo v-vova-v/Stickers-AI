@@ -1,0 +1,15 @@
+.testing-components {
+  display: flex;
+  margin: 10px;
+  contain: layout;
+  justify-content: center;
+
+  .component-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+  }
+}

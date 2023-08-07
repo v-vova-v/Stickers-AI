@@ -1,0 +1,31 @@
+ul.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 26px;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-style: normal;
+    color: #a3aed0;
+    cursor: pointer;
+    transition: color 0.5s;
+    &:hover {
+      color: #2b3674;
+      mat-icon {
+        color: #4318ff;
+      }
+    }
+    &.active {
+      mat-icon {
+        color: #4318ff;
+      }
+      color: #2b3674;
+      border-right: 4px solid #4318ff;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<div class="sticker-generation">
+  <div class="sticker-controls">
+    <ui-dynamic-form
+      [formModel]="formModel"
+      [submitDisabled]="isLoading"
+      (onSubmit)="generateImage($event)"
+      submitButtonName="Generate Image"
+    ></ui-dynamic-form>
+  </div>
+  <div class="stickers-list">
+    <ui-spinner *ngIf="isLoading" />
+    <app-sticker-image
+      *ngFor="let sticker of stickers"
+      url="data:image/jpg;base64, {{ sticker.b64_json || '' }}"
+      (addSticker)="addSticker($event)"
+    ></app-sticker-image>
+  </div>
+</div>

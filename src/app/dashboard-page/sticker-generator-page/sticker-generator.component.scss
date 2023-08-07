@@ -1,0 +1,28 @@
+:host {
+  width: 100%;
+  display: flex;
+}
+
+.sticker-generation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  .sticker-controls {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 500px;
+  }
+
+  .stickers-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    gap: 10px;
+  }
+}

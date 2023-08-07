@@ -1,0 +1,17 @@
+<header>
+  <div class="wrapper">
+    <div class="logo">Stickers AI</div>
+    <nav>
+      <ul>
+        <li *ngFor="let item of menuList">
+          <a [href]="item.link">
+            {{ item.name }}
+          </a>
+        </li>
+        <li>
+          <ui-button routerLink="/dashboard">Try now!</ui-button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

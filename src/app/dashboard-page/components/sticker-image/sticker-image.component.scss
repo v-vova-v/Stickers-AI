@@ -1,0 +1,33 @@
+.sticker-wrapper {
+  position: relative;
+  &:hover {
+    .sticker-add-print {
+      visibility: visible;
+    }
+  }
+  .sticker-add-print {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    gap: 10px;
+    top: 0;
+    left: 0;
+    background-color: rgba(108, 107, 107, 0);
+    position: absolute;
+    width: 255px;
+    height: 255px;
+    transition: background-color 0.7s;
+    ui-button {
+      opacity: 0;
+      transition: opacity 1s;
+    }
+    &:hover {
+      visibility: visible;
+      background-color: rgba(108, 107, 107, 0.7);
+      ui-button {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
+
+@font-face {
+  font-family: "Preahvihear";
+  src: url("./assets/fonts/preahvihear/Preahvihear-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$custom-typography: mat.define-typography-config(
+  $font-family: "Preahvihear, sans-serif",
+);
+$theme: mat.define-light-theme(
+  (
+    typography: $custom-typography,
+  )
+);
+
+@include mat.all-component-themes($theme);
+@include mat.typography-hierarchy($custom-typography);
+
+html,
+body {
+  height: 100%;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  background-color: #2e2e2e;
+}
+
+app-root {
+  display: flex;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: solid 1px transparent;
+  transition: border-bottom-color .4s;
+  &:hover {
+    border-bottom: solid 1px #fff;
+  }
+}
+
+.full-width {
+  width: 100%;
+}

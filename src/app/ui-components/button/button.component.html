@@ -1,0 +1,10 @@
+<button
+  mat-raised-button
+  [disabled]="disabled"
+  [type]="type"
+  [color]="color"
+  (click)="onClickButton($event)"
+>
+  <mat-icon *ngIf="icon" [fontIcon]="icon"></mat-icon>
+  <ng-content></ng-content>
+</button>
