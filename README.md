@@ -1,5 +1,11 @@
 # Stickers AI
 
+# General description
+To use the last version of the project navigate to the `develop` branch.
+Currently, you NEED to HAVE your own API key for DALLE-2 to use this app.
+API key should be placed into `src/environments/environment.ts` `openAIKey` prop.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Development server
